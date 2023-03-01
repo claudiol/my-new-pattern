@@ -5,6 +5,10 @@ metadata:
   namespace: hello-world
   annotations:
     argocd.argoproj.io/hook: PreSync
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: hello-world-view-deployments-role
 subjects:
 - kind: ServiceAccount
   name: default

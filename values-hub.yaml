@@ -62,6 +62,7 @@ clusterGroup:
     kustomize-demo:
       name: kustomize-demo
       namespace: kustomize-http-example
+      kustomize: true
       project: kustomize
       path: charts/all/kustomize-http-example
 

@@ -5,7 +5,7 @@ metadata:
   labels:
     app.kubernetes.io/instance: hello-world
   annotations:
-    argocd.argoproj.io/sync-hook: "PreSync"
+    argocd.argoproj.io/hook: "PreSync"
 data:
   "index.html": |-
     <!DOCTYPE html>
